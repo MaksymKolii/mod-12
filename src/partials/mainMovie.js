@@ -1,34 +1,51 @@
 
 const axios = require('axios').default;
-const API_KEY = "cf140a587ec927271eacbad378897741"
-
-const BASE_URL ="https://api.themoviedb.org/3"
 
 
-http://api.themoviedb.org/3/genre/movie/list?api_key=
- function getGenre() {
-     axios.get(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}`)
-     .then(function(response){
-        console.log(response)
-     }).catch(function (error) {
-    // handle error
-    console.log(error);
-  })
+/*Ссылка на документацию для запроса у полной информации о кинофильме для страницы кинофильма:*/
+
+
+
+// id,
+//       title,
+//       originalTitle,
+//       genres,
+//       popularity,
+//       overview,
+//       rating,
+//       voteCount,
+//       imgPath,
+
+
+
+
+  export async function getGenre(path) {
+
+    try {
+      const responce = await axios.get(path)
+       console.log(responce.data.genres);
+      return responce.data.genres
+    } catch (error) {
+      console.error(error);
+    }
+
     }
 
 
  
 
-function getMovi() {
-      axios.get(`${BASE_URL}/trending/movie/day?api_key=${API_KEY}`)
-      .then(function(response){
-        console.log(response)
-     }).catch(function (error) {
-    // handle error
-    console.log(error);
-  })
+export async function getMovies(path) {
+
+  try {
+   const responce = await axios.get(path)
+   console.log(responce.data);
+
+    return responce.data
+  } catch (error) {
+    console.error(error);
+  }
+      
     }
 
-
-getGenre()
-getMovi()
+//  getGenre()
+ // getMovies()
