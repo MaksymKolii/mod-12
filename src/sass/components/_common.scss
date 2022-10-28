@@ -1,0 +1,15 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+.header{
+    background-color: aqua;
+}
+.header-nav_logo-icon{
+    background-image: url(../images/film.svg);
+    background-repeat: no-repeat;
+    
+}
+
+.header_search-btn_icon{
+    background-image: url(../images/search_icon.svg);
+background-color: black;
+}

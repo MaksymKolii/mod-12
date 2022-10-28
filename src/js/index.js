@@ -1,5 +1,5 @@
-import { getGenre } from './partials/mainMovie';
-import { getMovies } from './partials/mainMovie';
+import { getGenre } from '../partials/mainMovie';
+import { getMovies } from '../partials/mainMovie';
 
 
 
@@ -21,25 +21,6 @@ async function getGenreById(idGen) {
   });
 
 }
-
-
-// getGenreById(12);
-
-// getMovies();
-
-
-// async function getMoviById(movieId){
-
-//     const arrMovies = await getMovies();
-//     // arrMovies.map(({id, title}) => {
-//     //     if (id === movieId) {
-//     //       console.log(title);
-        
-//     //     }
-//     //   });
-//     const movieToRender = arrMovies.find(movie => movie.id === movieId);
-
-// }
 
 // getMoviById(913290)
 
