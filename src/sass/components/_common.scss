@@ -1,16 +1,63 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+ @import '~node_modules/modern-normalize/modern-normalize.css';
 
-.header{
-    background-color: aqua;
-}
-.header-nav_logo-icon{
-    background-image: url(../images/film.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
 
-}
+ h1,
+ h2,
+ h3,
+ p {
 
-.header_search-btn_icon{
-    background-image: url(../images/search_icon.svg);
-background-color: black;
-}
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ ul, 
+ ol {
+margin-top: 0;
+margin-bottom: 0;
+padding: 0;
+ }
+
+ img{
+    display: block;
+ }
+
+ .list{
+    list-style: none;
+ }
+
+ .link{
+    text-decoration: none;
+ }
+ 
+ .container{
+width: 100%;
+padding-left: 20px;
+padding-right: 20px;
+ }
+
+
+ @media screen and (min-width:320px){
+    .container{
+
+        width: 280px;
+        margin: 0 auto;
+    }
+ }
+
+
+
+
+// .header{
+//     background-color: aqua;
+// }
+// .header-nav_logo-icon{
+//     background-image: url(../images/film.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+// }
+
+// .header_search-btn_icon{
+//     background-image: url(../images/search_icon.svg);
+// background-color: black;
+// }

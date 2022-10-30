@@ -1,5 +1,4 @@
 
-import 'node_modules/modern-normalize/modern-normalize.css';
 import { getGenre } from '../partials/mainMovie';
 import { getMovies } from '../partials/mainMovie';
 
