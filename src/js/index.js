@@ -117,3 +117,13 @@ async function renderModal(movieId, path) {
     
   }
   renderModal(913290, `https://api.themoviedb.org/3/movie/913290?api_key=cf140a587ec927271eacbad378897741&language=en-US`)
+
+  function makeArray(firstArray, secondArray, maxLength) {
+    // Change code below this line
+    // let newArr = ;
+    // newArr = newArr.;
+    return firstArray.concat(secondArray).slice(0, maxLength)
+  }
+  console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+  console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+  console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));
