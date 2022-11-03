@@ -90,13 +90,11 @@ color: #FFFFFF;
 .header-nav_item-link::after {
    content: "";
    display: block;
-   //position: absolute;
    left: 0;
-   // bottom: -1px;
    width: 100%;
-   height: 4px;
+   height: 3px;
    background: #FF6B08;
-   border-radius: 2px;
+   // border-radius: 2px;
    margin-top: 2px;
 }
  @media screen and (min-width:320px){
@@ -198,6 +196,7 @@ color: #FFFFFF;
 .header_search{
    display: flex;
    align-items: center;
+   position: relative;
    justify-content: space-between;
 }
 .header-nav_item:not(:last-child){
@@ -237,18 +236,16 @@ line-height: 1.14%;
 
 
 .header_search-btn{
-
+position: absolute;
    display: inline-flex;
    align-items: center;
    text-decoration: none;
+   right: 1px;
+    bottom: 4px;
    cursor: pointer;
    border: none;
     padding: 0;
     background-color: inherit;
-
-
-
-
   
 }
 .header_search-btn_icon{
