@@ -43,7 +43,6 @@ async function getMovies(path){
 
 getMovies(mostPopularPath)
 getMovies(pathSite)
-// getMovies(path)
 
 
 
